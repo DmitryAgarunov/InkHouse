@@ -1,0 +1,21 @@
+.main__wrapper {
+  gap: 30px;
+}
+.main__title {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #2C2D35;
+  line-height: 110%;
+  font-weight: 500;
+}
+.main__title_green {
+  color: #598D66;
+}
+.main__description {
+  font-size: 18px;
+  margin-bottom: 60px;
+  color: #86928B;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}/*# sourceMappingURL=main.css.map */
