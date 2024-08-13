@@ -9,11 +9,10 @@
     &__cards
         display: grid
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
-        row-gap: 30px
+        gap: 30px
         margin-bottom: 70px
-    &__butttons
+    &__buttons
         display: flex
-        padding: 10px 20px
         align-items: flex-start
         gap: 32px
     &__button
@@ -22,6 +21,21 @@
         padding: 10px 20px
         border: none
         background: #D4E8D9
+        &:focus
+            background: #D4E8D9
+            color: #2C2D35
+            outline: 2px #598D66 solid
+        &:hover
+            background: #598D66
+            color: #F4F6F5
+        &:active
+            background: #376B44
+            color: #F4F6F5
         &_green
             background: #376B44
             color: #fff
+
+@media screen and (max-width:768px)
+    .reproduction
+        &__title
+            font-size: 30px

@@ -30,28 +30,29 @@
     width: max-content
     display: block
     transition: 0.3s
+    &:focus
+        background-color: #D4E8D9
+        outline-offset: 0
     &:hover
         background-color: #598D66
         color: #F4F6F5
-    &:focus
-        background-color: #D4E8D9
-        border: none
     &:active
         background-color: #376B44
+        outline: 1px solid #376B44
+        color: #F4F6F5
     &_yellow
         background-color: #EEDB6D
         color: #2C2D35
         outline: none
-        &:hover
-          background-color: #FAEB97
-          color: #2C2D35
         &:focus
             outline: 1px solid #A38314
             background-color: #FAEB97
-            border: none
+        &:hover
+            background-color: #FAEB97
+            color: #2C2D35
         &:active
             background-color: #D9B949
-            border: none
+            
           
 
 
@@ -59,13 +60,10 @@
 
 .card
     padding: 20px
-    width: 350px
-    height: 730px
+    width: 100%
     background: #E1EDE6
     &__painting
-        width: 310px
-        height: 422px
-        flex-shrink: 0
+        width: 100%
         justify-content: center
     &__artist
         color: #86928B
