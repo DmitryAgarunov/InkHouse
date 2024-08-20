@@ -3,6 +3,7 @@
     padding: 23px 0
 .footer__wrapper
     align-items: start
+    flex-wrap: wrap
 .footer__wrapper-left
     max-width: 728px
     width: 100%
@@ -83,21 +84,33 @@
     &:active
         color:#376B44
         background: none
+
+.footer__right
+    max-width: 825px
+    width: 100%
+    align-items: start
+    
+.footer__wrapper-right
+    max-width: 170px
+    width: 100%
             
 
 .social__logos
     gap:30px
     margin-bottom: 10px
+    justify-content: start
     a
-        transition: 0.3s
-        &:focus 
-            background-color: #D4E8D9
-            filter: invert(57%) sepia(18%) saturate(763%) hue-rotate(83deg) brightness(84%) contrast(86%)
-        &:hover
-            // filter: invert(57%) sepia(18%) saturate(763%) hue-rotate(83deg) brightness(84%) contrast(86%)
-            
-        &:active
-            filter: invert(33%) sepia(9%) saturate(2070%) hue-rotate(83deg) brightness(102%) contrast(88%)
+        img
+            transition: 0.3s
+            &:hover
+                filter: invert(53%) sepia(11%) saturate(1216%) hue-rotate(83deg) brightness(92%) contrast(90%)
+            &:focus 
+                background-color: #D4E8D9
+                outline: none
+                // filter: invert(53%) sepia(11%) saturate(1216%) hue-rotate(83deg) brightness(92%) contrast(90%)
+            &:active
+                filter: invert(36%) sepia(19%) saturate(966%) hue-rotate(83deg) brightness(94%) contrast(92%)
+                background: none
     
 
 .footer__copyright    
@@ -107,3 +120,39 @@
     display: flex
     flex-direction: column
     gap:8px
+
+@media screen and (max-width: 768px)
+    .footer__main-info
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin-bottom: 30px
+
+    
+@media screen and (max-width: 576px)
+    .footer__right
+        flex-wrap: wrap
+        
+    .footer__logo
+        margin-bottom: 0
+
+    .footer__wrapper-right
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        max-width: none
+
+    .footer__copyright
+        flex-direction: row
+
+    .footer__navigation
+        max-width: none
+        padding-bottom: 16px
+        border-bottom: 1px solid #c3d1c6
+        margin-bottom: 16px
+
+@media screen and (max-width: 320px)
+    .footer__navigation
+        flex-wrap: wrap
+    

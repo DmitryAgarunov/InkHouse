@@ -102,6 +102,63 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 33px;
+  }
+  .button {
+    font-size: 18px;
+    padding: 14.5px 41px;
+    height: auto;
+  }
+  .button_yellow {
+    padding: 14.5px 33.5px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card__title {
+    font-size: 24px;
+  }
+  .card__price {
+    font-size: 20px;
+    margin-top: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0 15px;
+  }
+  .button {
+    padding: 14.5px 29px;
+  }
+  .card {
+    padding-bottom: 30px;
+  }
+  .card__painting {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .card__artist {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .card__material {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .card__price {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .card__button {
+    margin-top: 10px;
+  }
+}
 @font-face {
   font-family: "Raleway";
   src: local("Raleway"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.eot") format("eot"), url("../fonts/Raleway-Medium.ttf") format("truetype");
@@ -155,6 +212,20 @@
   background: none;
 }
 
+@media screen and (max-width: 576px) {
+  .header__wrapper {
+    flex-direction: column;
+  }
+  .header__nav {
+    border-top: 1px solid #C3D1C6;
+  }
+  .header__logo {
+    margin-bottom: 16px;
+  }
+  .header__ul {
+    margin-top: 16px;
+  }
+}
 .main {
   margin-bottom: 70px;
 }
@@ -189,6 +260,44 @@
 @media screen and (max-width: 768px) {
   .main__title {
     font-size: 40px;
+  }
+  .main__description {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main__wrapper {
+    margin: 50px 0;
+  }
+  .main__image {
+    width: 37%;
+  }
+  .main__text {
+    width: 63%;
+  }
+  .main__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .main__description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main__image {
+    display: none;
+  }
+  .main__text {
+    width: 100%;
+  }
+  .main__title {
+    font-size: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .main__wrapper {
+    margin: 60px 0;
   }
   .main__description {
     margin-bottom: 40px;
@@ -244,6 +353,33 @@
     font-size: 30px;
   }
 }
+@media screen and (max-width: 576px) {
+  .reproduction__wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .reproduction__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .reproduction__cards {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .reproduction__buttons {
+    overflow: scroll;
+    gap: 20px;
+  }
+  .reproduction__button {
+    font-size: 18px;
+  }
+  .reproduction__cards {
+    margin-bottom: 60px;
+  }
+}
 .new-collection {
   padding: 70px 0;
   background-image: url("../img/king_background.webp");
@@ -293,6 +429,24 @@
     margin-top: 30px;
   }
 }
+@media screen and (max-width: 576px) {
+  .new-collection {
+    padding: 50px 0;
+  }
+  .new-collection__title {
+    font-size: 24px;
+    max-width: 261px;
+  }
+  .new-collection__description {
+    font-size: 16px;
+  }
+  .new-collection__logo {
+    width: 50px;
+  }
+  .new-collection__button {
+    margin-top: 20px;
+  }
+}
 .our-team {
   background: #F4F6F5;
 }
@@ -301,7 +455,7 @@
   padding: 70px 0;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px;
 }
 
 .our-team__wrapper2 {
@@ -330,9 +484,41 @@
   border-radius: 50px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .our-team__wrapper {
     flex-wrap: wrap;
+  }
+  .our-team__wrapper2 {
+    margin-top: 0;
+    gap: 30px;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .our-team__wrapper {
+    padding: 50px 0;
+    gap: 30px;
+  }
+  .our-team__wrapper2 {
+    gap: 20px;
+  }
+  .our-team__main-img {
+    width: 350px;
+  }
+  .our-team__title {
+    font-size: 24px;
+  }
+  .our-team__description {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .our-team__main-img {
+    width: 100%;
+  }
+  .stuff-image__wrapper {
+    gap: 0;
+    justify-content: space-between;
   }
 }
 .footer {
@@ -342,6 +528,7 @@
 
 .footer__wrapper {
   align-items: start;
+  flex-wrap: wrap;
 }
 
 .footer__wrapper-left {
@@ -448,19 +635,35 @@
   background: none;
 }
 
+.footer__right {
+  max-width: 825px;
+  width: 100%;
+  align-items: start;
+}
+
+.footer__wrapper-right {
+  max-width: 170px;
+  width: 100%;
+}
+
 .social__logos {
   gap: 30px;
   margin-bottom: 10px;
+  justify-content: start;
 }
-.social__logos a {
+.social__logos a img {
   transition: 0.3s;
 }
-.social__logos a:focus {
-  background-color: #D4E8D9;
-  filter: invert(57%) sepia(18%) saturate(763%) hue-rotate(83deg) brightness(84%) contrast(86%);
+.social__logos a img:hover {
+  filter: invert(53%) sepia(11%) saturate(1216%) hue-rotate(83deg) brightness(92%) contrast(90%);
 }
-.social__logos a:active {
-  filter: invert(33%) sepia(9%) saturate(2070%) hue-rotate(83deg) brightness(102%) contrast(88%);
+.social__logos a img:focus {
+  background-color: #D4E8D9;
+  outline: none;
+}
+.social__logos a img:active {
+  filter: invert(36%) sepia(19%) saturate(966%) hue-rotate(83deg) brightness(94%) contrast(92%);
+  background: none;
 }
 
 .footer__copyright {
@@ -470,4 +673,42 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__main-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__right {
+    flex-wrap: wrap;
+  }
+  .footer__logo {
+    margin-bottom: 0;
+  }
+  .footer__wrapper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+  }
+  .footer__copyright {
+    flex-direction: row;
+  }
+  .footer__navigation {
+    max-width: none;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #c3d1c6;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__navigation {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=style.css.map */

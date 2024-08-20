@@ -88,3 +88,44 @@
     &__button
         width: 100%
         margin-top: 20px 
+
+@media screen and (max-width: 576px)
+    .container
+        padding: 0 33px
+    .button
+        font-size: 18px
+        padding: 14.5px 41px
+        height: auto
+        &_yellow
+            padding: 14.5px 33.5px
+    .card
+        display: flex
+        flex-direction: column
+        &__title
+            font-size: 24px
+        &__price
+            font-size: 20px
+            margin-top: auto
+
+@media screen and (max-width: 320px)
+    .container
+        padding: 0 15px
+    .button
+        padding: 14.5px 29px
+    .card
+        padding-bottom: 30px
+        &__painting
+            height: 250px
+            object-fit: cover
+            object-position: top
+        &__artist
+            font-size: 16px
+            margin-top: 15px
+        &__material
+            font-size: 16px
+            margin-top: 10px
+        &__price
+            font-size: 20px
+            margin-top: 30px
+        &__button
+            margin-top: 10px
