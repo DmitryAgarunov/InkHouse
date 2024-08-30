@@ -1,158 +1,169 @@
 .footer
     background-color:#E1EDE6
     padding: 23px 0
-.footer__wrapper
-    align-items: start
-    flex-wrap: wrap
-.footer__wrapper-left
-    max-width: 728px
-    width: 100%
-    align-items: start
+    &__wrapper
+        align-items: start
+        gap: 15px
+        &-left
+            max-width: 728px
+            width: 100%
+            align-items: start
+        &-right
+            max-width: 132px
+            width: 100%
 
-.footer__logo
-   gap: 8px
-   margin-bottom: 35px
-   max-width: 145px
-   text-decoration: none
-.footer__logo-text
-    color: #598D66
-    font-size: 20px
-    font-weight: 700
+    &__logo
+        gap: 8px
+        margin-bottom: 35px
+        max-width: 145px
+        text-decoration: none
+        &-text
+            color: #598D66
+            font-size: 20px
+            font-weight: 700
 
-.footer__phone a
-    display: block
-    margin-bottom: 8px
-    color: #2C2D35
-    font-size: 20px
-    text-decoration: none
-    &:hover
-        color:#598D66
-    &:focus
-        background: #D4E8D9
-        outline: none
-    &:active
-        color:#376B44
-        background: none
-.footer__phone-title
-    color: #86928B
-    font-size: 18px
-          
-.footer__navigation
-    max-width: 445px
-    width: 100%
-    gap: 60px
-    align-items: start
-    
-.footer__reproduction 
-    display: flex
-    flex-direction: column
-    gap: 6px
-.footer__news
-    display: flex
-    flex-direction: column
-    gap: 6px
-    
-.footer__about
-    display: flex
-    flex-direction: column
-    gap: 6px
-
-.footer__navigation a
-    color: #86928B
-    font-size: 18px
-    line-height: 150% /* 27px */    
-    text-decoration: none
-    transition: 0.3s
-    &:hover
-        color:#598D66
-    &:focus
-        background: #D4E8D9
-        outline: none
-    &:active
-        color:#376B44
-        background: none
-
-.footer__navigation .navigation__title 
-    color: #2C2D35
-    font-size: 20px
-    transition: 0.3s
-    &:hover
-        color:#598D66
-    &:focus
-        background: #D4E8D9
-        outline: none
-    &:active
-        color:#376B44
-        background: none
-
-.footer__right
-    max-width: 825px
-    width: 100%
-    align-items: start
-    
-.footer__wrapper-right
-    max-width: 170px
-    width: 100%
+    &__phone
+        width: max-content
+        a
+            display: block
+            margin-bottom: 8px
+            color: #2C2D35
+            font-size: 20px
+            text-decoration: none
+            &:hover
+                color:#598D66
+            &:focus
+                background: #D4E8D9
+                outline: none
+            &:active
+                color:#376B44
+                background: none
+        &-title
+            color: #86928B
+            font-size: 18px
             
-
-.social__logos
-    gap:30px
-    margin-bottom: 10px
-    justify-content: start
-    a
-        img
+    &__navigation
+        max-width: 445px
+        width: 100%
+        gap: 15px
+        align-items: start
+        a
+            color: #86928B
+            font-size: 18px
+            line-height: 150% /* 27px */    
+            text-decoration: none
             transition: 0.3s
             &:hover
-                filter: invert(53%) sepia(11%) saturate(1216%) hue-rotate(83deg) brightness(92%) contrast(90%)
-            &:focus 
-                background-color: #D4E8D9
+                color:#598D66
+            &:focus
+                background: #D4E8D9
                 outline: none
-                // filter: invert(53%) sepia(11%) saturate(1216%) hue-rotate(83deg) brightness(92%) contrast(90%)
             &:active
-                filter: invert(36%) sepia(19%) saturate(966%) hue-rotate(83deg) brightness(94%) contrast(92%)
+                color:#376B44
                 background: none
-    
 
-.footer__copyright    
-    color: #86928B
-    font-size: 12px
-    line-height: 120% /* 14.4px */
-    display: flex
-    flex-direction: column
-    gap:8px
+        .navigation__title 
+            color: #2C2D35
+            font-size: 20px
+            transition: 0.3s
+            &:hover
+                color:#598D66
+            &:focus
+                background: #D4E8D9
+                outline: none
+            &:active
+                color:#376B44
+                background: none
 
-@media screen and (max-width: 768px)
-    .footer__main-info
+
+    &__reproduction 
         display: flex
-        justify-content: space-between
+        flex-direction: column
+        gap: 6px
+    &__news
+        display: flex
+        flex-direction: column
+        gap: 6px
+    
+    &__about
+        display: flex
+        flex-direction: column
+        gap: 6px
+
+    &__right
+        max-width: 825px
         width: 100%
-        margin-bottom: 30px
+        align-items: start
+        gap: 15px
+    
+    &__copyright    
+        color: #86928B
+        font-size: 12px
+        line-height: 120% /* 14.4px */
+        display: flex
+        flex-direction: column
+        gap:8px
+                
+
+.social
+    &__logos
+        gap:30px
+        margin-bottom: 10px
+        justify-content: start
+        a
+            img
+                transition: 0.3s
+                &:hover
+                    filter: invert(53%) sepia(11%) saturate(1216%) hue-rotate(83deg) brightness(92%) contrast(90%)
+                &:focus 
+                    background-color: #D4E8D9
+                    outline: none
+                &:active
+                    filter: invert(36%) sepia(19%) saturate(966%) hue-rotate(83deg) brightness(94%) contrast(92%)
+                    background: none
+       
+@media screen and (max-width: 768px)
+    .footer
+        &__main-info
+            display: flex
+            justify-content: space-between
+            width: 100%
+            margin-bottom: 30px
+        &__wrapper
+            flex-wrap: wrap
 
     
 @media screen and (max-width: 576px)
-    .footer__right
-        flex-wrap: wrap
-        
-    .footer__logo
-        margin-bottom: 0
+    .footer
+        &__right
+            flex-wrap: wrap
+        &__logo
+            margin-bottom: 0
+        &__wrapper-right
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+            max-width: none
+        &__copyright
+            flex-direction: row
+        &__navigation
+            max-width: none
+            padding-bottom: 16px
+            border-bottom: 1px solid #c3d1c6
+            margin-bottom: 16px
 
-    .footer__wrapper-right
-        display: flex
-        flex-direction: column
-        align-items: center
-        width: 100%
-        max-width: none
-
-    .footer__copyright
-        flex-direction: row
-
-    .footer__navigation
-        max-width: none
-        padding-bottom: 16px
-        border-bottom: 1px solid #c3d1c6
-        margin-bottom: 16px
-
-@media screen and (max-width: 320px)
-    .footer__navigation
-        flex-wrap: wrap
-    
+@media screen and (max-width: 400px)
+    .footer
+        &__navigation
+            flex-wrap: wrap
+            gap: 20px
+            padding-bottom: 20px
+            margin-bottom: 20px
+        &__reproduction
+            .navigation__title
+                font-size: 16px
+        &__phone
+            a
+                font-size: 16px
+                color: #2C2D35

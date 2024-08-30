@@ -2,6 +2,7 @@
     background-color: #E1EDE6
     &__wrapper
         padding: 32px 0 33px 0
+        gap: 15px
     &__logo
         max-width: 143px
         width: 100%
@@ -11,6 +12,7 @@
             font-weight: bold
     &__ul
         padding: 0
+        max-width: 445px
     &__li
         list-style: none
     &__nav
@@ -31,14 +33,28 @@
             background: none
 
 @media screen and (max-width: 576px)
-    .header__wrapper
-        flex-direction: column
-    .header__nav
-        border-top: 1px solid #C3D1C6
-        
-    .header__logo
-        margin-bottom: 16px
+    .header
+        &__wrapper
+            flex-direction: column
+        &__nav
+            border-top: 1px solid #C3D1C6
+        &__logo
+            margin-bottom: 16px
+        &__ul
+            margin-top: 16px
 
-    .header__ul
-        margin-top: 16px
+@media screen and (max-width: 400px)
+    .header
+        &__logo
+            margin: 0 auto
+            padding-top: 17px
+            padding-bottom: 18px
+        &__nav
+            border-top: none
+        &__wrapper
+            padding-top: 0
+            padding-bottom: 19px
+            &__mobile
+                background-color: #fff
+
             

@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css"> 
 </head>
 <body>
     <header class="header">
+        <div class="header__wrapper__mobile">
+            <div class="container mobile">
+                <div class="header__logo flex">
+                    <img src="./img/logo.svg" alt="Logotype">
+                    <p>Ink. House</p>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="header__wrapper flex">
-                <div class="header__logo flex">
+                <div class="header__logo flex desktop">
                     <img src="./img/logo.svg" alt="Logotype">
                     <p>Ink. House</p>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__ul flex">
-                        <li class="header__li"><a class="header__a" href="#production">Репродукция</a></li>
-                        <li class="header__li"><a class="header__a" href="#new-collection">Новинки</a></li>
-                        <li class="header__li"><a class="header__a" href="#our-team">О нас</a></li>
+                        <li class="header__li mobile">
+                            <input type="checkbox" class="burger__input" id="menu__toggle">
+                            <label for="menu__toggle" class="burger__label">
+                                <span></span>
+                            </label>
+                            <ul class="menu__box">
+                                <li>
+                                    <a href="#production" class="menu__item">Репродукции</a>
+                                    <a href="#new-collection" class="menu__item">Новинки</a>
+                                    <a href="#our-team" class="menu__item">О нас</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__li desktop"><a class="header__a" href="#production">Репродукция</a></li>
+                        <li class="header__li desktop"><a class="header__a" href="#new-collection">Новинки</a></li>
+                        <li class="header__li desktop"><a class="header__a" href="#our-team">О нас</a></li>
                         <li class="header__li"><a class="header__a" href=""><img src="./img/basket.svg" alt="basket icon"></a></li>
                     </ul>
                 </nav>
@@ -39,7 +61,7 @@
             </div>
         </section>
         <section class="reproduction" id="production">
-            <div class="container">
+            <div class="container2">
                 <div class="reproduction__wrapper flex">
                     <h2 class="reproduction__title">Репродукции</h2>
                     <div class="reproduction__buttons">    
@@ -141,7 +163,7 @@
                             <img src="./img/logo.svg" alt="">
                             <p class="footer__logo-text">Ink. House</p>
                         </a>
-                        <div class="footer__phone">
+                        <div class="footer__phone desktop">
                             <a href="tel:+79995435454">+7 (999) 543-54-54</a>
                             <p class="footer__phone-title">Мастерская</p>
                         </div>
@@ -149,6 +171,10 @@
                     <div class="footer__right flex">
                         <div class="footer__wrapper-left flex">
                             <div class="footer__navigation flex">
+                                <div class="footer__phone mobile">
+                                    <a href="tel:+79995435454">+7 (999) 543-54-54</a>
+                                    <p class="footer__phone-title">Мастерская</p>
+                                </div>
                                 <div class="footer__reproduction">
                                     <a href="#production" class="navigation__title">Репродукция</a>
                                     <a href="#">Франция</a>
